@@ -42,4 +42,4 @@ for i in files:
     df = df.replace(-999.25, '')
     logging.debug("verify insert column  '{0}'".format(df.head()))
 
-    df.to_csv(new_directory + name + '_amended.csv', ,index=False)
+    df.to_csv(new_directory + name + '_amended.csv', index=False)
