@@ -1,0 +1,9 @@
+google-images-download==2.8.0
+itsdangerous==1.1.0
+numpy==1.18.3
+pandas==1.0.3
+python-dateutil==2.8.1
+pytz==2019.3
+selenium==3.141.0
+six==1.14.0
+urllib3==1.25.3
