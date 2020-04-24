@@ -42,4 +42,7 @@ for i in files:
     df = df.replace(-999.25, '')
     logging.debug("verify insert column  '{0}'".format(df.head()))
 
-    df.to_csv(new_directory + name + '_amended.csv', index=False)
+    df['YYYY/MM/DD'] = pd.to_datetime(df['YYYY/MM/DD'])
+    df['YYYY/MM/DD'] = df['YYYY/MM/DD'].dt.strftime('%Y/%m/%d')
+
+    df.to_csv(new_directory + name + '_amended.csv', index=False, date_format='%Y%m%d')
